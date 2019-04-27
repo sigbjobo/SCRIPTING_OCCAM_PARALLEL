@@ -73,7 +73,7 @@ cd ${folder}
 
 #COPY INPUT-FILES
 
-cp -r ${INPUT_PATH}/PARA/* .
+cp -r ${INPUT_PATH}/* .
 
 #######################################################
 # OPTIONAL, BUT USEFUL COMMANDS FOR FIXING INPUT-FILES
@@ -104,6 +104,7 @@ then
     sed -i "/number_of_steps:/{n;s/.*/$NEQUIL/}" fort.1
     bash ${SHELL_PATH}/run_para.sh
     mv fort.8 equil.xyz
+    cp fort.5 pre_equil.5
     cp fort.9 fort.5
     sed -i "/number_of_steps:/{n;s/.*/$NSTEPS/}" fort.1
 fi

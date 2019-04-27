@@ -7,14 +7,14 @@
 
 # MANDATORY SETTINGS
 
-export INPUT_PATH= # FOLDER CONTAINING ONLY fort.1, fort.3 and fort.5
+export INPUT_PATH=$(pwd) # FOLDER CONTAINING ONLY fort.1, fort.3 and fort.5
 export NPROC=192   # NUMBER OF PROCESSES: NODES*NTASKS-PER-NODE
 
 # OPTIONAL SETTINGS (COMMENT OUT IF NOT DESIRED)
 
-NEQUIL=1500000     # NUMBER OF EQUILIBRATION STEPS
-NSTEPS=150000000   # NUMBER OF SAMPLING STEPS
-NTRAJ=10000        # SAMPLING PERIOD FOR TRAJECTORY 
+NEQUIL=1500        # NUMBER OF EQUILIBRATION STEPS
+NSTEPS=15000       # NUMBER OF SAMPLING STEPS
+NTRAJ=2500         # SAMPLING PERIOD FOR TRAJECTORY 
 FIX_INPUT=1        # FIX CELLS AND 
 LAT_UPD=20         # NUMBER OF STEPS BETWEEN LATTICE UPDATES
 POT_UPD=10000      # NUMBER OF STEPS BETWEEN POTENTIAL UPDATE
@@ -49,11 +49,14 @@ module load Python/3.6.4-intel-2018a
 # parameter1=$1 # etc
 
 
+
  
 # PREPARE SIMULATION DIRECTORY
 
 mkdir -p ${SCRATCH_DIRECTORY}
 cd ${SCRATCH_DIRECTORY}
+
+
 
 
 #MAKE A SIMULATION-FOLDER 
@@ -63,9 +66,14 @@ mkdir ${folder}
 cd ${folder}
 
 
-#COPY INPUT-FILES
 
-cp -r ${INPUT_PATH}/PARA/* .
+#COPY INPUT-FILES
+cp -r ${INPUT_PATH}/{fort.3,fort.1} .
+
+# REMOVE COMMENTS TO TEST
+python ${PYTHON_PATH}/make_syst.py ${INPUT_PATH}/triton.5 100 10000 10
+mv fort_new.5 fort.5
+
 
 #######################################################
 # OPTIONAL, BUT USEFUL COMMANDS FOR FIXING INPUT-FILES
@@ -96,6 +104,7 @@ then
     sed -i "/number_of_steps:/{n;s/.*/$NEQUIL/}" fort.1
     bash ${SHELL_PATH}/run_para.sh
     mv fort.8 equil.xyz
+    cp fort.5 pre_equil.5
     cp fort.9 fort.5
     sed -i "/number_of_steps:/{n;s/.*/$NSTEPS/}" fort.1
 fi

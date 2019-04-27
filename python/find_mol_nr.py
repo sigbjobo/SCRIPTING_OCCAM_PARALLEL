@@ -9,6 +9,8 @@ import numpy as np
 
 
 fp5 = open('fort.5', 'r')
+
+# FIRST GET TO LINE 6
 fp5.readline()
 fp5.readline()
 fp5.readline()

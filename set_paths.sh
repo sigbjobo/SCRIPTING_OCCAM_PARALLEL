@@ -6,7 +6,7 @@ SHELL_PATH="${A}/shell"
 PYTHON_PATH="${A}/python"
 
 OCCAM_PATH="${A}/occam_parallel/"
-JOB_PATH="${A}/JOBSCRIPTS"
+JOB_PATH="${A}/jobscripts"
 
 #FIX SHELL SCRIPTS
 sed -i 's|PYTHON_PATH=.*|PYTHON_PATH="'"$PYTHON_PATH"'"|g' ${SHELL_PATH}/*.sh

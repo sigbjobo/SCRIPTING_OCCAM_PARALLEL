@@ -82,7 +82,7 @@ for i in range(n_solute):
       #  if(isfloat(data[j][7].replace('D','E'))):
       #    connec=np.array([int(m) for m in data[j][10:]])
       #  else:
-        connec=np.array([int(m) for m in data[j][7:]])
+        connec=np.array([int(m) for m in data[j][10:]])
         connec[connec>0]=connec[connec>0]+n_atoms*i
         
 
