@@ -1,0 +1,2 @@
+1
+ *** FATAL fort.10 input file does not exist ***

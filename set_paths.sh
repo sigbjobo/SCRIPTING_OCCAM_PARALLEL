@@ -7,16 +7,22 @@ PYTHON_PATH="${A}/python"
 
 OCCAM_PATH="${A}/occam_parallel/"
 JOB_PATH="${A}/jobscripts"
+IOPC_PATH="${A}/IOPC"
 
 #FIX SHELL SCRIPTS
 sed -i 's|PYTHON_PATH=.*|PYTHON_PATH="'"$PYTHON_PATH"'"|g' ${SHELL_PATH}/*.sh
 sed -i 's|SHELL_PATH=.*|SHELL_PATH="'"$SHELL_PATH"'"|g' ${SHELL_PATH}/*.sh
 sed -i 's|OCCAM_PATH=.*|OCCAM_PATH="'"$OCCAM_PATH"'"|g' ${SHELL_PATH}/*.sh
+sed -i 's|IOPC_PATH=.*|IOPC_PATH="'"$IOPC_PATH"'"|g' ${SHELL_PATH}/*.sh
+
 
 #FIX JOB SCRIPTS
 sed -i 's|PYTHON_PATH=.*|PYTHON_PATH="'"$PYTHON_PATH"'"|g' ${JOB_PATH}/*.sh
 sed -i 's|SHELL_PATH=.*|SHELL_PATH="'"$SHELL_PATH"'"|g' ${JOB_PATH}/*.sh
 sed -i 's|OCCAM_PATH=.*|OCCAM_PATH="'"$OCCAM_PATH"'"|g' ${JOB_PATH}/*.sh
+sed -i 's|IOPC_PATH=.*|IOPC_PATH="'"$IOPC_PATH"'"|g' ${JOB_PATH}/*.sh
+
+
 
 
 #FIX PYTHON SCRIPTS

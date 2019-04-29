@@ -10,6 +10,7 @@
 export INPUT_PATH=$(pwd) # FOLDER CONTAINING ONLY fort.1, fort.3 and fort.5
 export NPROC=192   # NUMBER OF PROCESSES: NODES*NTASKS-PER-NODE
 
+######################################################################
 # OPTIONAL SETTINGS (COMMENT OUT IF NOT DESIRED)
 
 NEQUIL=1500        # NUMBER OF EQUILIBRATION STEPS
@@ -19,13 +20,15 @@ FIX_INPUT=1        # FIX CELLS AND
 LAT_UPD=20         # NUMBER OF STEPS BETWEEN LATTICE UPDATES
 POT_UPD=10000      # NUMBER OF STEPS BETWEEN POTENTIAL UPDATE
 OUT_PRINT=10000    # NUMBER OF STEPS BETWEEN fort.7 PRINTOUT
-
+######################################################################
 
 # EXPORTED DIRECTORIES, EITHER SET MANUALLY OR USE bash set_paths.sh
 
 export SHELL_PATH="/home/sigbjobo/Documents/OCCAM_PARALLEL/shell"
 export PYTHON_PATH="/home/sigbjobo/Documents/OCCAM_PARALLEL/python"
 export OCCAM_PATH="/home/sigbjobo/Documents/OCCAM_PARALLEL/occam_parallel/"
+export IOPC_PATH="/home/sigbjobo/Documents/OCCAM_PARALLEL/IOPC"
+
 
 # OPTION FOR COMPILATION OF OCCAM AND IOPC
 
@@ -44,19 +47,17 @@ module load intel/2018b
 module load FFTW/3.3.8-intel-2018b
 module load Python/3.6.4-intel-2018a
 
+#################################################
 # EXTRA ARGUMENTS CAN EASILY BE INCORPORATED BY:
 
 # parameter1=$1 # etc
+#################################################
 
 
-
- 
 # PREPARE SIMULATION DIRECTORY
 
 mkdir -p ${SCRATCH_DIRECTORY}
 cd ${SCRATCH_DIRECTORY}
-
-
 
 
 #MAKE A SIMULATION-FOLDER 
