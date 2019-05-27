@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --job-name=JOB_NAME
 #SBATCH --account=nn4654k
-#SBATCH --time=3-0:0:0
-#SBATCH --nodes=6 --ntasks-per-node=32
-##SBATCH --qos=devel
+#SBATCH --time=0-1:0:0
+#SBATCH --nodes=2 --ntasks-per-node=32
+#SBATCH --qos=devel
 
 # MANDATORY SETTINGS
 
 export INPUT_PATH=$(pwd) # FOLDER CONTAINING ONLY fort.1, fort.3 and fort.5
-export NPROC=192   # NUMBER OF PROCESSES: NODES*NTASKS-PER-NODE
+export NPROC=64   # NUMBER OF PROCESSES: NODES*NTASKS-PER-NODE
 
 # OPTIONAL SETTINGS (COMMENT OUT IF NOT DESIRED)
 
@@ -23,9 +23,9 @@ OUT_PRINT=10000    # NUMBER OF STEPS BETWEEN fort.7 PRINTOUT
 
 # EXPORTED DIRECTORIES, EITHER SET MANUALLY OR USE bash set_paths.sh
 
-export SHELL_PATH="/home/sigbjobo/Documents/OCCAM_PARALLEL/shell"
-export PYTHON_PATH="/home/sigbjobo/Documents/OCCAM_PARALLEL/python"
-export OCCAM_PATH="/home/sigbjobo/Documents/OCCAM_PARALLEL/occam_parallel/"
+export SHELL_PATH="/cluster/home/sigbjobo/TEST_JOB/SCRIPTING_OCCAM_PARALLEL/shell"
+export PYTHON_PATH="/cluster/home/sigbjobo/TEST_JOB/SCRIPTING_OCCAM_PARALLEL/python"
+export OCCAM_PATH="/cluster/home/sigbjobo/TEST_JOB/SCRIPTING_OCCAM_PARALLEL/occam_parallel/"
 
 # OPTION FOR COMPILATION OF OCCAM AND IOPC
 

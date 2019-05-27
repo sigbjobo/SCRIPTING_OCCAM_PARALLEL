@@ -59,9 +59,13 @@ NMOL=sum(nmols)
 
 
 # EXPORT VARIABLES TO SHELL FOR prep_iopc1.sh
+fp=open('input.txt','a')
+fp.write('%d\n'%(np.sum(NMOL)))
+fp.write('%d\n'%(np.sum(NATOM)))
+# os.environ['NATOM'] = "%d"%np.sum(NATOM)
+# os.environ['NMOL']  = "%d"%np.sum(NMOL)
 
-os.environ['NATOM'] = "%d"%np.sum(NATOM)
-os.environ['NMOL']  = "%d"%np.sum(NMOL)
+
 
 l="ABCDEFGHIJK"
 mols_out  = np.zeros(len(l))
@@ -70,6 +74,9 @@ mols_out[:len(mols_unique)]  = mols_unique
 nmols_out[:len(nmols)] = nmols
 mols_out=["%d"%(a) for a in mols_out]
 nmols_out=["%d"%(a) for a in nmols_out]
-for i in range(len(l)):
-    os.environ['NATOM%s'%(l[i])] = mols_out[i]
-    os.environ['NMOL%s' %(l[i])] = nmols_out[i]
+for i in range(int(sys.argv[1])):
+    # os.environ['NATOM%s'%(l[i])] =  mols_out[i]
+    # os.environ['NMOL%s' %(l[i])] = nmols_out[i]
+    fp.write('%d\n'%(int(nmols_out[i])))
+    fp.write('%d\n'%(int(mols_out[i])))
+

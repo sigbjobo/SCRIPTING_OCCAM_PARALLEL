@@ -1,0 +1,1449 @@
+Starting job 293716 on c61-12,c62-3 at Sat Apr 27 13:38:30 CEST 2019
+
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) StdEnv
+
+The following have been reloaded with a version change:
+  1) GCCcore/7.3.0 => GCCcore/6.4.0
+  2) binutils/2.30-GCCcore-7.3.0 => binutils/2.28-GCCcore-6.4.0
+  3) icc/2018.3.222-GCC-7.3.0-2.30 => icc/2018.1.163-GCC-6.4.0-2.28
+  4) iccifort/2018.3.222-GCC-7.3.0-2.30 => iccifort/2018.1.163-GCC-6.4.0-2.28
+  5) ifort/2018.3.222-GCC-7.3.0-2.30 => ifort/2018.1.163-GCC-6.4.0-2.28
+  6) iimpi/2018b => iimpi/2018a
+  7) imkl/2018.3.222-iimpi-2018b => imkl/2018.1.163-iimpi-2018a
+  8) impi/2018.3.222-iccifort-2018.3.222-GCC-7.3.0-2.30 => impi/2018.1.163-iccifort-2018.1.163-GCC-6.4.0-2.28
+  9) intel/2018b => intel/2018a
+
+filename: /cluster/home/sigbjobo/TEST_JOB/SCRIPTING_OCCAM_PARALLEL/test/triton.5
+Number of solute molecules: 100
+Number of solvent molecules: 10000
+Size of box: 10.0 nm
+Number of atoms in a solute molecule: 12
+Running equilibration simulation
+64
+1
+
+
+
+
+
+
+
+
+
+
+1
+64
+ ========================================
+        * * * I. O. P. C. * * *          
+  Input Program for Parallel Occam Code  
+  ver. 1.7                               
+ ========================================
+ 
+ > insert [1] for input program
+ > insert [2] for output program
+ > insert [3] for help
+ > Insert the total number of molecules: 
+ > Insert the total number of particles: 
+forrtl: severe (24): end-of-file during read, unit 6, file /cluster/work/jobs/293716/SIM/input.txt
+Image              PC                Routine            Line        Source             
+iopc               0000000000438B3E  Unknown               Unknown  Unknown
+iopc               0000000000455505  Unknown               Unknown  Unknown
+iopc               00000000004315D4  input_                      9  input.F
+iopc               0000000000403124  MAIN__                     47  main.F
+iopc               0000000000402B2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B6D08998445  __libc_start_main     Unknown  Unknown
+iopc               0000000000402A29  Unknown               Unknown  Unknown
+ process          35 of          64 is alive
+ process           2 of          64 is alive
+ process          36 of          64 is alive
+ process          40 of          64 is alive
+ process          46 of          64 is alive
+ process          48 of          64 is alive
+ process          49 of          64 is alive
+ process          51 of          64 is alive
+ process          54 of          64 is alive
+ process          56 of          64 is alive
+ process          57 of          64 is alive
+ process          58 of          64 is alive
+ process          59 of          64 is alive
+ process          61 of          64 is alive
+ process          62 of          64 is alive
+ process          63 of          64 is alive
+ process          32 of          64 is alive
+ process          33 of          64 is alive
+ process          34 of          64 is alive
+ process          37 of          64 is alive
+ process          38 of          64 is alive
+ process          39 of          64 is alive
+ process          41 of          64 is alive
+ process          42 of          64 is alive
+ process          43 of          64 is alive
+ process          44 of          64 is alive
+ process          45 of          64 is alive
+ process          47 of          64 is alive
+ process          52 of          64 is alive
+ process          53 of          64 is alive
+ process          55 of          64 is alive
+ process          60 of          64 is alive
+ process           8 of          64 is alive
+ process          10 of          64 is alive
+ process          11 of          64 is alive
+ process          12 of          64 is alive
+ process          13 of          64 is alive
+ process          50 of          64 is alive
+ process          14 of          64 is alive
+ process          15 of          64 is alive
+ process          16 of          64 is alive
+ process          18 of          64 is alive
+ process          19 of          64 is alive
+ process          20 of          64 is alive
+ process          22 of          64 is alive
+ process          25 of          64 is alive
+ process          27 of          64 is alive
+ process          29 of          64 is alive
+ process          30 of          64 is alive
+ process           0 of          64 is alive
+ process           1 of          64 is alive
+ process           4 of          64 is alive
+ process           5 of          64 is alive
+ process           6 of          64 is alive
+ process           7 of          64 is alive
+ process           9 of          64 is alive
+ process          17 of          64 is alive
+ process          21 of          64 is alive
+ process          23 of          64 is alive
+ process          24 of          64 is alive
+ process          26 of          64 is alive
+ process          28 of          64 is alive
+ process          31 of          64 is alive
+ process           3 of          64 is alive
+forrtl: severe (24): end-of-file during read, unit 31, file /cluster/work/jobs/293716/SIM/fort.31
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B10B8411445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 30, file /cluster/work/jobs/293716/SIM/fort.30
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B07EDA3C445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 35, file /cluster/work/jobs/293716/SIM/fort.35
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2069B40445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 38, file /cluster/work/jobs/293716/SIM/fort.38
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B148F856445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 36, file /cluster/work/jobs/293716/SIM/fort.36
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B32D8AAE445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 21, file /cluster/work/jobs/293716/SIM/fort.21
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B04D0B24445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 29, file /cluster/work/jobs/293716/SIM/fort.29
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B28578FD445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 34, file /cluster/work/jobs/293716/SIM/fort.34
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B1C6B61E445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 28, file /cluster/work/jobs/293716/SIM/fort.28
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B56ABA43445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 23, file /cluster/work/jobs/293716/SIM/fort.23
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD8AAADB445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 51, file /cluster/work/jobs/293716/SIM/fort.51
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AAB6C0F1445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 26, file /cluster/work/jobs/293716/SIM/fort.26
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B5A5523B445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 27, file /cluster/work/jobs/293716/SIM/fort.27
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B9146D30445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 40, file /cluster/work/jobs/293716/SIM/fort.40
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AC4F7759445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 44, file /cluster/work/jobs/293716/SIM/fort.44
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B502260D445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 46, file /cluster/work/jobs/293716/SIM/fort.46
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B51FFA87445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 39, file /cluster/work/jobs/293716/SIM/fort.39
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B19CEB34445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 41, file /cluster/work/jobs/293716/SIM/fort.41
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B02A8EC4445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 42, file /cluster/work/jobs/293716/SIM/fort.42
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD15FA03445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 47, file /cluster/work/jobs/293716/SIM/fort.47
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B5111ECF445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 24, file /cluster/work/jobs/293716/SIM/fort.24
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ADEDB6F4445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 25, file /cluster/work/jobs/293716/SIM/fort.25
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA31873F445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 32, file /cluster/work/jobs/293716/SIM/fort.32
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2E9DB47445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 33, file /cluster/work/jobs/293716/SIM/fort.33
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B01616BD445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 37, file /cluster/work/jobs/293716/SIM/fort.37
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B309BD22445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 43, file /cluster/work/jobs/293716/SIM/fort.43
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AE9E3B5C445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 45, file /cluster/work/jobs/293716/SIM/fort.45
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AB36A215445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 48, file /cluster/work/jobs/293716/SIM/fort.48
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B6B83486445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 49, file /cluster/work/jobs/293716/SIM/fort.49
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA171DEE445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 50, file /cluster/work/jobs/293716/SIM/fort.50
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ABC9A38E445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 52, file /cluster/work/jobs/293716/SIM/fort.52
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ADE35233445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 22, file /cluster/work/jobs/293716/SIM/fort.22
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B91F3884445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 56, file /cluster/work/jobs/293716/SIM/fort.56
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA4EE5A8445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 77, file /cluster/work/jobs/293716/SIM/fort.77
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B7C781CF445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 60, file /cluster/work/jobs/293716/SIM/fort.60
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B6ECADEA445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 61, file /cluster/work/jobs/293716/SIM/fort.61
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AB098A92445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 63, file /cluster/work/jobs/293716/SIM/fort.63
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B31BA29A445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 71, file /cluster/work/jobs/293716/SIM/fort.71
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B5A10EB6445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 72, file /cluster/work/jobs/293716/SIM/fort.72
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ABCF27A3445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 76, file /cluster/work/jobs/293716/SIM/fort.76
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AE640D5C445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 78, file /cluster/work/jobs/293716/SIM/fort.78
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B1D5D3DD445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 80, file /cluster/work/jobs/293716/SIM/fort.80
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ABC9744B445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 82, file /cluster/work/jobs/293716/SIM/fort.82
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B72D03FA445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 54, file /cluster/work/jobs/293716/SIM/fort.54
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AF3ED091445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 55, file /cluster/work/jobs/293716/SIM/fort.55
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2989CC1445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 57, file /cluster/work/jobs/293716/SIM/fort.57
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B072BB6F445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 58, file /cluster/work/jobs/293716/SIM/fort.58
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B57F94E3445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 59, file /cluster/work/jobs/293716/SIM/fort.59
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B6FA85A1445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 65, file /cluster/work/jobs/293716/SIM/fort.65
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD5889CE445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 68, file /cluster/work/jobs/293716/SIM/fort.68
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ABFAA7D6445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 69, file /cluster/work/jobs/293716/SIM/fort.69
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AE2B4FB7445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 79, file /cluster/work/jobs/293716/SIM/fort.79
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AF79876B445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 84, file /cluster/work/jobs/293716/SIM/fort.84
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AEB3FCCF445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 53, file /cluster/work/jobs/293716/SIM/fort.53
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B12EB538445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 62, file /cluster/work/jobs/293716/SIM/fort.62
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B0E3FDD5445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 64, file /cluster/work/jobs/293716/SIM/fort.64
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B987F10E445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 66, file /cluster/work/jobs/293716/SIM/fort.66
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA407746445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 67, file /cluster/work/jobs/293716/SIM/fort.67
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA4B1A9C445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 70, file /cluster/work/jobs/293716/SIM/fort.70
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ADF85238445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 73, file /cluster/work/jobs/293716/SIM/fort.73
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B0234389445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 74, file /cluster/work/jobs/293716/SIM/fort.74
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD797A0B445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 75, file /cluster/work/jobs/293716/SIM/fort.75
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8835A3A445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 81, file /cluster/work/jobs/293716/SIM/fort.81
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B98EFE36445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 83, file /cluster/work/jobs/293716/SIM/fort.83
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD706DC7445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+srun: error: c61-12: tasks 0-31: Exited with exit code 24
+srun: error: c62-3: tasks 32-63: Exited with exit code 24
+ ========================================
+        * * * I. O. P. C. * * *          
+  Input Program for Parallel Occam Code  
+  ver. 1.7                               
+ ========================================
+ 
+ > insert [1] for input program
+ > insert [2] for output program
+ > insert [3] for help
+  * * * Writing Parallel Trajectory * * * 
+ -----------------------------------------
+ 
+ > Insert the number of CPU: 
+forrtl: severe (24): end-of-file during read, unit 15, file /cluster/work/jobs/293716/SIM/fort.15
+Image              PC                Routine            Line        Source             
+iopc               0000000000438B3E  Unknown               Unknown  Unknown
+iopc               0000000000455505  Unknown               Unknown  Unknown
+iopc               00000000004350FC  wtrj_                      53  wtrj.F
+iopc               0000000000403246  MAIN__                     69  main.F
+iopc               0000000000402B2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B54884AC445  __libc_start_main     Unknown  Unknown
+iopc               0000000000402A29  Unknown               Unknown  Unknown
+64
+1
+
+
+
+
+
+
+
+
+
+
+1
+64
+ ========================================
+        * * * I. O. P. C. * * *          
+  Input Program for Parallel Occam Code  
+  ver. 1.7                               
+ ========================================
+ 
+ > insert [1] for input program
+ > insert [2] for output program
+ > insert [3] for help
+ > Insert the total number of molecules: 
+ > Insert the total number of particles: 
+forrtl: severe (24): end-of-file during read, unit 6, file /cluster/work/jobs/293716/SIM/input.txt
+Image              PC                Routine            Line        Source             
+iopc               0000000000438B3E  Unknown               Unknown  Unknown
+iopc               0000000000455505  Unknown               Unknown  Unknown
+iopc               00000000004315D4  input_                      9  input.F
+iopc               0000000000403124  MAIN__                     47  main.F
+iopc               0000000000402B2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AB648F1A445  __libc_start_main     Unknown  Unknown
+iopc               0000000000402A29  Unknown               Unknown  Unknown
+ process          33 of          64 is alive
+ process           5 of          64 is alive
+ process          37 of          64 is alive
+ process          39 of          64 is alive
+ process          41 of          64 is alive
+ process          43 of          64 is alive
+ process          44 of          64 is alive
+ process          45 of          64 is alive
+ process          47 of          64 is alive
+ process          54 of          64 is alive
+ process          61 of          64 is alive
+ process          32 of          64 is alive
+ process          34 of          64 is alive
+ process          35 of          64 is alive
+ process          36 of          64 is alive
+ process          38 of          64 is alive
+ process          40 of          64 is alive
+ process          42 of          64 is alive
+ process          46 of          64 is alive
+ process          48 of          64 is alive
+ process          49 of          64 is alive
+ process          50 of          64 is alive
+ process          51 of          64 is alive
+ process          52 of          64 is alive
+ process          53 of          64 is alive
+ process          55 of          64 is alive
+ process          56 of          64 is alive
+ process          57 of          64 is alive
+ process          58 of          64 is alive
+ process          59 of          64 is alive
+ process          60 of          64 is alive
+ process          62 of          64 is alive
+ process          63 of          64 is alive
+ process           8 of          64 is alive
+ process           9 of          64 is alive
+ process          10 of          64 is alive
+ process          11 of          64 is alive
+ process          12 of          64 is alive
+ process          13 of          64 is alive
+ process          14 of          64 is alive
+ process          15 of          64 is alive
+ process          16 of          64 is alive
+ process          17 of          64 is alive
+ process          18 of          64 is alive
+ process          20 of          64 is alive
+ process          23 of          64 is alive
+ process          24 of          64 is alive
+ process          26 of          64 is alive
+ process          27 of          64 is alive
+ process          28 of          64 is alive
+ process          30 of          64 is alive
+ process          31 of          64 is alive
+ process           0 of          64 is alive
+ process           1 of          64 is alive
+ process           2 of          64 is alive
+ process           3 of          64 is alive
+ process           4 of          64 is alive
+ process           6 of          64 is alive
+ process           7 of          64 is alive
+ process          19 of          64 is alive
+ process          21 of          64 is alive
+ process          22 of          64 is alive
+ process          25 of          64 is alive
+ process          29 of          64 is alive
+forrtl: severe (24): end-of-file during read, unit 21, file /cluster/work/jobs/293716/SIM/fort.21
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B29CEC64445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 39, file /cluster/work/jobs/293716/SIM/fort.39
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B4DB5ABD445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 37, file /cluster/work/jobs/293716/SIM/fort.37
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD2DEF99445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 45, file /cluster/work/jobs/293716/SIM/fort.45
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8AEEAA0445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 34, file /cluster/work/jobs/293716/SIM/fort.34
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3FCFC7D445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 44, file /cluster/work/jobs/293716/SIM/fort.44
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B24E0ED5445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 47, file /cluster/work/jobs/293716/SIM/fort.47
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD11F3D5445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 48, file /cluster/work/jobs/293716/SIM/fort.48
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ACF64B62445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 31, file /cluster/work/jobs/293716/SIM/fort.31
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B0314C6C445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 29, file /cluster/work/jobs/293716/SIM/fort.29
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B5DA6FB4445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 32, file /cluster/work/jobs/293716/SIM/fort.32
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AE57A543445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 36, file /cluster/work/jobs/293716/SIM/fort.36
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B028DE88445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 43, file /cluster/work/jobs/293716/SIM/fort.43
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B9B664CA445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 49, file /cluster/work/jobs/293716/SIM/fort.49
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B0441B33445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 52, file /cluster/work/jobs/293716/SIM/fort.52
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B975892E445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 22, file /cluster/work/jobs/293716/SIM/fort.22
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD93EF34445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 23, file /cluster/work/jobs/293716/SIM/fort.23
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B5732BDE445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 24, file /cluster/work/jobs/293716/SIM/fort.24
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B0A111EB445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 26, file /cluster/work/jobs/293716/SIM/fort.26
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B1207DE9445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 27, file /cluster/work/jobs/293716/SIM/fort.27
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B2E1D5CA445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 28, file /cluster/work/jobs/293716/SIM/fort.28
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B9B5EE52445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 30, file /cluster/work/jobs/293716/SIM/fort.30
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AF6F7183445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 33, file /cluster/work/jobs/293716/SIM/fort.33
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AFCD708B445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 35, file /cluster/work/jobs/293716/SIM/fort.35
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8723F84445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 38, file /cluster/work/jobs/293716/SIM/fort.38
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AFF679E0445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 40, file /cluster/work/jobs/293716/SIM/fort.40
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B9B42DA0445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 41, file /cluster/work/jobs/293716/SIM/fort.41
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B5689D7B445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 42, file /cluster/work/jobs/293716/SIM/fort.42
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B9B548DB445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 46, file /cluster/work/jobs/293716/SIM/fort.46
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ABDD5431445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 50, file /cluster/work/jobs/293716/SIM/fort.50
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3F8AF78445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 51, file /cluster/work/jobs/293716/SIM/fort.51
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AF7EE403445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 25, file /cluster/work/jobs/293716/SIM/fort.25
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B9650BFA445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 59, file /cluster/work/jobs/293716/SIM/fort.59
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B18B5E4C445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 70, file /cluster/work/jobs/293716/SIM/fort.70
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B4F64D3B445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 65, file /cluster/work/jobs/293716/SIM/fort.65
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA03F269445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 62, file /cluster/work/jobs/293716/SIM/fort.62
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B9F70B78445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 73, file /cluster/work/jobs/293716/SIM/fort.73
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AC4C254D445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 66, file /cluster/work/jobs/293716/SIM/fort.66
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B0A59084445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 72, file /cluster/work/jobs/293716/SIM/fort.72
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B4CAAF62445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 58, file /cluster/work/jobs/293716/SIM/fort.58
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B14DBA63445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 83, file /cluster/work/jobs/293716/SIM/fort.83
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B157EC37445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 68, file /cluster/work/jobs/293716/SIM/fort.68
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ADAB70A3445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 61, file /cluster/work/jobs/293716/SIM/fort.61
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AF0281EB445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 77, file /cluster/work/jobs/293716/SIM/fort.77
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD967BF4445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 53, file /cluster/work/jobs/293716/SIM/fort.53
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B681C85B445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 57, file /cluster/work/jobs/293716/SIM/fort.57
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AE408A05445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 63, file /cluster/work/jobs/293716/SIM/fort.63
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B54BCEB3445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 81, file /cluster/work/jobs/293716/SIM/fort.81
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002ABCFE925445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 82, file /cluster/work/jobs/293716/SIM/fort.82
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002BA9B6230445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 54, file /cluster/work/jobs/293716/SIM/fort.54
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B80ECCBC445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 55, file /cluster/work/jobs/293716/SIM/fort.55
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3269DC9445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 56, file /cluster/work/jobs/293716/SIM/fort.56
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B26CB2DD445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 60, file /cluster/work/jobs/293716/SIM/fort.60
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD37AA00445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 64, file /cluster/work/jobs/293716/SIM/fort.64
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B09E455D445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 67, file /cluster/work/jobs/293716/SIM/fort.67
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B7E85058445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 71, file /cluster/work/jobs/293716/SIM/fort.71
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3E30163445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 74, file /cluster/work/jobs/293716/SIM/fort.74
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AE2A49D5445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 75, file /cluster/work/jobs/293716/SIM/fort.75
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AF4A3022445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 76, file /cluster/work/jobs/293716/SIM/fort.76
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B6522017445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 78, file /cluster/work/jobs/293716/SIM/fort.78
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B563F58E445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 79, file /cluster/work/jobs/293716/SIM/fort.79
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B49E63FE445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 80, file /cluster/work/jobs/293716/SIM/fort.80
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B588213D445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 84, file /cluster/work/jobs/293716/SIM/fort.84
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B5EEBFB1445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 69, file /cluster/work/jobs/293716/SIM/fort.69
+Image              PC                Routine            Line        Source             
+occamcgmpi         0000000000442D1E  Unknown               Unknown  Unknown
+occamcgmpi         000000000045F6E5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000409EB5  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404CA4  Unknown               Unknown  Unknown
+occamcgmpi         0000000000404A2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002AB68A9E0445  __libc_start_main     Unknown  Unknown
+occamcgmpi         0000000000404929  Unknown               Unknown  Unknown
+srun: error: c61-12: tasks 0-31: Exited with exit code 24
+srun: error: c62-3: tasks 32-63: Exited with exit code 24
+ ========================================
+        * * * I. O. P. C. * * *          
+  Input Program for Parallel Occam Code  
+  ver. 1.7                               
+ ========================================
+ 
+ > insert [1] for input program
+ > insert [2] for output program
+ > insert [3] for help
+  * * * Writing Parallel Trajectory * * * 
+ -----------------------------------------
+ 
+ > Insert the number of CPU: 
+forrtl: severe (24): end-of-file during read, unit 15, file /cluster/work/jobs/293716/SIM/fort.15
+Image              PC                Routine            Line        Source             
+iopc               0000000000438B3E  Unknown               Unknown  Unknown
+iopc               0000000000455505  Unknown               Unknown  Unknown
+iopc               00000000004350FC  wtrj_                      53  wtrj.F
+iopc               0000000000403246  MAIN__                     69  main.F
+iopc               0000000000402B2E  Unknown               Unknown  Unknown
+libc-2.17.so       00002B8CBB94B445  __libc_start_main     Unknown  Unknown
+iopc               0000000000402A29  Unknown               Unknown  Unknown
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+293716         JOB_NAME         64                                             00:00:08      0:0 
+293716.batch      batch         32        1   00:00:00          0   00:00:00   00:00:08      0:0 
+293716.exte+     extern         64        2   00:00:00          1   00:00:00   00:00:08      0:0 
+293716.0     occamcgmpi         64       64   00:00:00         51   00:00:00   00:00:01     24:0 
+293716.1     occamcgmpi         64       64   00:00:00         50   00:00:00   00:00:01     24:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+293716                                                                           
+293716.batch       966K          0       966K        0              0          0 
+293716.exte+       599K          1    315.50K        0              1          0 
+293716.0           223K         63     193968       14             46          5 
+293716.1           228K         31     199232        5             36          0 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+293716                                                                                                
+293716.batch            0               0              0            0                0              0 
+293716.exte+        0.00M               0          0.00M            0                1              0 
+293716.0            1.11M               0          1.07M        0.01M                0          0.01M 
+293716.1            1.11M               0          1.07M        0.01M                0          0.01M 
+
+Job 293716 completed at Sat Apr 27 13:38:39 CEST 2019
