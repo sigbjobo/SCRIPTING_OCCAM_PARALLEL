@@ -2,14 +2,15 @@
 #SBATCH --job-name=JOB_NAME
 #SBATCH --account=nn4654k
 #SBATCH --time=0-1:0:0
-#SBATCH --mem-per-cpu=1G
-#SBATCH --nodes=3 --ntasks-per-node=16
-#SBATCH --qos=devel
+#SBATCH --mem-per-cpu=2G
+#SBATCH --nodes=4 --ntasks-per-node=40
+##SBATCH --qos=devel
 
 # MANDATORY SETTINGS
 
 export INPUT_PATH=$(pwd) # FOLDER CONTAINING ONLY fort.1, fort.3 and fort.5
 export NPROC=${SLURM_NTASKS}
+export LMOD_DISABLE_SAME_NAME_AUTOSWAP=no
 
 ######################################################################
 # OPTIONAL SETTINGS (COMMENT OUT IF NOT DESIRED)
@@ -26,9 +27,9 @@ OUT_PRINT=10000    # NUMBER OF STEPS BETWEEN fort.7 PRINTOUT
 # EXPORTED DIRECTORIES, EITHER SET MANUALLY OR USE bash set_paths.sh
 
 
-export SHELL_PATH="/usit/abel/u1/sigbjobo/DNA/SCRIPTING_OCCAM_PARALLEL/shell"
-export PYTHON_PATH="/usit/abel/u1/sigbjobo/DNA/SCRIPTING_OCCAM_PARALLEL/python"
-export OCCAM_PATH="/usit/abel/u1/sigbjobo/DNA/SCRIPTING_OCCAM_PARALLEL/../occam_parallel/"
+export SHELL_PATH="/cluster/home/sigbjobo/SCRIPTING_OCCAM_PARALLEL/shell"
+export PYTHON_PATH="/cluster/home/sigbjobo/SCRIPTING_OCCAM_PARALLEL/python"
+export OCCAM_PATH="/cluster/home/sigbjobo/SCRIPTING_OCCAM_PARALLEL/../occam_parallel/"
 
 
 # OPTION FOR COMPILATION OF OCCAM AND IOPC
@@ -38,15 +39,15 @@ export COMPILE=0
 
 # PATHS FOR SIMULATION AND SUBMIT DIRECTORY
 
-SCRATCH_DIRECTORY=""
+SCRATCH_DIRECTORY=${SCRATCH}
 SLURM_SUBMIT_DIR=$(pwd)
 
 
 #LOADED MODULES
-module purge
-module load intel/2019.1
-module load FFTW
-module load python3/3.7.0
+#module purge
+module load intel/2018b
+module load FFTW/3.3.8-intel-2019a
+module load Python/3.6.6-intel-2018b
 
 #################################################
 # EXTRA ARGUMENTS CAN EASILY BE INCORPORATED BY:
