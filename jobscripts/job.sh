@@ -65,8 +65,9 @@ cd ${SCRATCH_DIRECTORY}
 #MAKE A SIMULATION-FOLDER 
 
 folder=SIM
-mkdir ${folder}
-cd ${folder}
+mkdir ${SLURM_SUBMIT_DIR}/${folder}
+#mkdir ${folder}
+#cd ${folder}
 
 
 
@@ -121,6 +122,6 @@ mv fort.8 sim.xyz
 
 # MOVE SIMULATION DATA BACK TO SUBMIT FOLDER
 
-cp -r ${SCRATCH_DIRECTORY}/${folder} ${SLURM_SUBMIT_DIR}/${folder}
+cp -r ${SCRATCH_DIRECTORY}/* ${SLURM_SUBMIT_DIR}/${folder}/
 
 exit 0
