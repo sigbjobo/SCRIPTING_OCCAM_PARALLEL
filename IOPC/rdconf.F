@@ -54,7 +54,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
      $  (ibond(l,j),j=1,6)     ! insert the max number of connectivity [default: (ibond(l,j),j=1,4) ]
 
 c           write (20,500) ll,clab(l), itype(l),
-           write (20,*) ll,clab(l), itype(l),
+           write (20,500) ll,clab(l), itype(l),
      $  nbonds(l)
      $, x(l),y(l),z(l) ,
 !     $  vx(l),vy(l),vz(l),
@@ -62,7 +62,7 @@ c           write (20,500) ll,clab(l), itype(l),
 
  110  continue
  120  continue
- 500  format(i8,2x, a5, 2i3, 6d15.6, 6i8)   ! the default value of this format is: (i8,2x, a5, 2i3, 6d15.6, 4i8)
+ 500  format(i8,2x, a5, 2i3, 3d15.6, 6i8)   ! the default value of this format is: (i8,2x, a5, 2i3, 6d15.6, 4i8)
 
 
       close(10)

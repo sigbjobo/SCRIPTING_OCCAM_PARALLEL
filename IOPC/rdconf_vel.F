@@ -54,7 +54,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
      $  (ibond(l,j),j=1,6)
 
 
-           write (20,*) ll,clab(l), itype(l),
+           write (20,500) ll,clab(l), itype(l),
      $  nbonds(l)
      $, x(l),y(l),z(l) ,
      $  vx(l),vy(l),vz(l),

@@ -24,7 +24,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
  
       enddo
 
-       print*,mod(molB,numprocs) 
+C       print*,mod(molB,numprocs) 
 
       if (mod(molA,numprocs).gt.0) then
 
@@ -35,7 +35,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
       endif 
 
       if (mod(molB,numprocs).gt.0) then 
-           print*,mod(molB,numprocs) 
+C           print*,mod(molB,numprocs) 
 
          do i = 1, mod(molB,numprocs)
            molBpara(numprocs-i+1) = 
@@ -60,10 +60,10 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
        endif
 
-
-       write(6,*)' > the number of mol. A, B, C and total in every CPU:'
-       write(6,*)'           proc         mol.A       mol.B   
-     $    mol.C     mold.D        total '
+c$$$
+c$$$       write(*,*)' > the number of mol. A, B, C and total in every CPU:'
+c$$$       write(*,*)'           proc         mol.A       mol.B   
+c$$$     $    mol.C     mold.D        total '
 
 
            do i = 1, numprocs
@@ -71,8 +71,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
             Ntotalpara(i) = molApara(i)+molBpara(i)+molCpara(i)
      $ +molDpara(i) 
 
-            write(6,*)'CPU', i, molApara(i),molBpara(i),molCpara(i),
-     $                   molDpara(i),  Ntotalpara(i)
+c$$$            write(*,*)'CPU', i, molApara(i),molBpara(i),molCpara(i),
+c$$$     $                   molDpara(i),  Ntotalpara(i)
 
             write(15,*)molApara(i)*npartA
      $      +molBpara(i)*npartB+molCpara(i)*npartC+molDpara(i)*npartD,
@@ -121,7 +121,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
                 Numb= nbonds(Atomtotal)                ! the number of bond 
           
            
-           do j = 1, 4 
+           do j = 1, 6 
 
             if (ibond(Atomtotal,j).ne.0) then
                ibond1(Atomtotal,j)=ibond(Atomtotal,j)-keep
@@ -134,7 +134,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
        write(20+i,200) Atom,Atomtotal,Lab,Lkind,Numb,
      $                 X(Atomtotal),Y(Atomtotal),Z(Atomtotal),
      $                vx(Atomtotal),vy(Atomtotal),vz(Atomtotal),    ! velocity writing
-     $  (ibond1(Atomtotal,j),j=1,4)
+     $  (ibond1(Atomtotal,j),j=1,6)
 
           enddo
           enddo
@@ -174,7 +174,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
                 Numb=nbonds(Atomtotal)                 ! the number of bond 
 
 
-           do j = 1, 4
+           do j = 1, 6
 
             if (ibond(Atomtotal,j).gt.0) then
              ibond1(Atomtotal,j)=ibond(Atomtotal,j)-keep
@@ -189,7 +189,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
        write(20+i,200) Atom,Atomtotal,Lab,Lkind,Numb,
      $             X(Atomtotal),Y(Atomtotal),Z(Atomtotal),
      $                vx(Atomtotal),vy(Atomtotal),vz(Atomtotal),
-     $  (ibond1(Atomtotal,j),j=1,4)
+     $  (ibond1(Atomtotal,j),j=1,6)
 
        enddo
        enddo
@@ -231,7 +231,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
                 Numb=nbonds(Atomtotal)                 ! the number of bond 
 
 
-           do j = 1, 4
+           do j = 1, 6
 
             if (ibond(Atomtotal,j).gt.0) then
              ibond1(Atomtotal,j)=ibond(Atomtotal,j)-keep
@@ -246,7 +246,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
        write(20+i,200) Atom,Atomtotal,Lab,Lkind,Numb,
      $             X(Atomtotal),Y(Atomtotal),Z(Atomtotal),
      $                vx(Atomtotal),vy(Atomtotal),vz(Atomtotal),
-     $  (ibond1(Atomtotal,j),j=1,4)
+     $  (ibond1(Atomtotal,j),j=1,6)
 
        enddo
        enddo
@@ -289,7 +289,7 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
                 Numb=nbonds(Atomtotal)                 ! the number of bond 
 
 
-           do j = 1, 4
+           do j = 1, 6
 
             if (ibond(Atomtotal,j).gt.0) then
              ibond1(Atomtotal,j)=ibond(Atomtotal,j)-keep
@@ -305,11 +305,11 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
        write(20+i,200) Atom,Atomtotal,Lab,Lkind,Numb,
      $             X(Atomtotal),Y(Atomtotal),Z(Atomtotal),
      $             vx(Atomtotal),vy(Atomtotal),vz(Atomtotal),
-     $  (ibond1(Atomtotal,j),j=1,4)
+     $  (ibond1(Atomtotal,j),j=1,6)
 
        enddo
        enddo
- 200  format(i8,2x,i8,2x,1a5,2x, i5, 2x, i5, 6d15.6, 2x, 4i7)
+ 200  format(i8,2x,i8,2x,1a5,2x, i5, 2x, i5, 6d15.6, 2x, 6i7)
       enddo
 
       return

@@ -12,9 +12,9 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
         use varsh
         implicit none
        
-        integer os, ios
+        integer os, ios,nattotal2
         istop = 0
- 
+         
 C        open(*)
 C        open(6,FILE='input.txt') 
 C        read(6,*)
@@ -25,22 +25,25 @@ Copen(6)
         open (unit = 15, file = 'fort.15', status = 'OLD',
      $        iostat = ios, access='SEQUENTIAL', form ='FORMATTED')
         if (ios.ne.0) then
-           write(6,*)'*** FATAL fort.15 does not exist ***'
+           write(*,*)'*** FATAL fort.15 does not exist ***'
            istop=1
         endif
 
-        write(*,*) ' * * * Writing Parallel Trajectory * * * '
-        write(*,*) '-----------------------------------------'
-        write(*,*)
-        write(*,*) '> Insert the number of CPU: '
+c$$$        write(*,*) ' * * * Writing Parallel Trajectory * * * '
+c$$$        write(*,*) '-----------------------------------------'
+c$$$        write(*,*)
+c$$$        write(*,*) '> Insert the number of CPU: '
 
         read(6,*) numprocs
          
         allocate(natmpia(numprocs))
-
+        allocate(natmpia2(numprocs))
         do i = 1, numprocs
            open(200+i)   ! ATTENTION THE NEW VERSION OF OCCAMPI READ THE INPUT FORM FORT.21 UNTIL FORT.199 
+
            natmpia(i) = 0 
+           natmpia2(i) = 0 
+                      
         enddo
 
 ccccccc read the number of particles in every CPU from fort.15 cccccccc
@@ -52,34 +55,38 @@ ccccccc read the number of particles in every CPU from fort.15 cccccccc
         enddo 
 
 !ying  08/05/2011
-        write(*,*) '> Insert the initial steps: '
-        read (6,*) intsteps
-        write(*,*) '> Insert the time step dt:'
-        read (6,*) dt 
+C        write(*,*) '> Insert the initial steps: '
+        read(6,*) intsteps
+C        write(*,*) '> Insert the time step dt:'
+        read(6,*) dt 
 !ying  08/05/2011
         
-        write(*,*) '> Insert the number of configurations:   ' 
+C        write(*,*) '> Insert the number of configurations:   ' 
         read(6,*) nconf
-        write(*,*) '> the end of insert                      '
+C        write(*,*) '> the end of insert                      '
 
-        write(*,*) '-----------------------------------------'
+C        write(*,*) '-----------------------------------------'
 
  
         do i = 1, nconf     
-
+           
          nattotal = 0 
+         nattotal2 = 0 
+         
 
-        do j = 1, numprocs
- 
-         read(200+j,*) natpara
-         read(200+j,*) wrdt,dLx,dLy,dLz
-      
-         nattotal=nattotal+natmpia(j) 
+         do j = 1, numprocs
+            
+            read(2*NIOPC+j,*) natpara
+            read(2*NIOPC+j,*) wrdt,dLx,dLy,dLz
 
-        enddo
+            natmpia2(j)=natpara 
+            nattotal=nattotal+natmpia(j) 
+            nattotal2=nattotal2+natmpia2(j) 
+
+         enddo
 
         if((intsteps.eq.0).or.((intsteps.ne.0).and.(i.ge.3))) then 
-        write(8,*) nattotal
+        write(8,*) nattotal2
         write(8,101) wrdt+intsteps*dt,dLx,dLy,dLz
         endif 
 
@@ -89,9 +96,9 @@ ccccccc read the number of particles in every CPU from fort.15 cccccccc
         endif 
 
         do j = 1, numprocs
-         do k = 1, natmpia(j) 
+         do k = 1, natmpia2(j) 
    
-          read(200+j,110)aa,rx,ry,rz,vvx,vvy,vvz  !!! WARNING !!!
+          read(2*NIOPC+j,110) aa,rx,ry,rz,vvx,vvy,vvz  !!! WARNING !!!
          
           if((intsteps.eq.0).or.((intsteps.ne.0).and.(i.ge.3))) then
           write(8,100) aa,rx,ry,rz

@@ -75,8 +75,8 @@ ccccccc read the number of particles in every CPU from fort.15 cccccccc
 
         do j = 1, numprocs
  
-         read(200+j,*) natpara
-         read(200+j,*) wrdt,dLx,dLy,dLz
+         read(2*NIOPC+j,*) natpara
+         read(2*NIOPC+j,*) wrdt,dLx,dLy,dLz
       
          nattotal=nattotal+natmpia(j) 
 
@@ -95,7 +95,7 @@ ccccccc read the number of particles in every CPU from fort.15 cccccccc
         do j = 1, numprocs
          do k = 1, natmpia(j) 
    
-          read(200+j,110)aa,rx,ry,rz,vvx,vvy,vvz  !!! WARNING !!!
+          read(2*NIOPC+j,110)aa,rx,ry,rz,vvx,vvy,vvz  !!! WARNING !!!
          
           if((intsteps.eq.0).or.((intsteps.ne.0).and.(i.ge.3))) then
           write(8,100) aa,rx,ry,rz

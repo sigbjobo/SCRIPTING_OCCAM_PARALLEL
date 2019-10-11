@@ -35,7 +35,7 @@ c      print*,mod(molB,numprocs)
       endif 
 
       if (mod(molB,numprocs).gt.0) then 
-           print*,mod(molB,numprocs) 
+C           print*,mod(molB,numprocs) 
 
          do i = 1, mod(molB,numprocs)
            molBpara(numprocs-i+1) = 
@@ -61,17 +61,17 @@ c      print*,mod(molB,numprocs)
        endif
 
 
-       write(6,*)' > the number of mol. A, B, C and total in every CPU:'
-       write(6,*)'           proc         mol.A       mol.B   
-     $    mol.C      mol.D        total '
+C       write(*,*)' > the number of mol. A, B, C and total in every CPU:'
+C       write(*,*)'           proc         mol.A       mol.B   
+C     $    mol.C      mol.D        total '
 
            do i = 1, numprocs
 
             Ntotalpara(i) = molApara(i)+molBpara(i)+molCpara(i)
      $ +molDpara(i) 
 
-            write(6,*)'CPU', i, molApara(i),molBpara(i),molCpara(i),
-     $                   molDpara(i),  Ntotalpara(i)
+C            write(*,*)'CPU', i, molApara(i),molBpara(i),molCpara(i),
+C     $                   molDpara(i),  Ntotalpara(i)
 
             write(15,*)molApara(i)*npartA
      $      +molBpara(i)*npartB+molCpara(i)*npartC+molDpara(i)*npartD,

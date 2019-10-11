@@ -17,7 +17,9 @@ CCCCCCCCCCCC the variables for the input program   CCCCCCCCCCCCCCCCCCCCCCCCCCCCC
        integer numprocs             ! the number of CPU 
        integer l,ll,n,nl,sumnum
        integer i,j,k,is,js,ks,keep 
-   
+       integer NIOPC
+       parameter (NIOPC = 100) ! TO ALLOW FOR MORE CPUS
+       
        real*8 b(3,3)                ! the length of box 
        real*8 binc                  ! the changes of the length of the box
 
@@ -48,7 +50,7 @@ CCCCCCCCCCCCCCCC the variables for the  output program  CCCCCCCCCCCCCCCCCCCCCCCC
        integer nconf                                ! the number of configurations 
        integer nattotal                             ! the number of total particles 
        integer natpara                              ! the number of particles in every CPU 
-       integer, allocatable:: natmpia(:)            ! the number of particles in every CPU
+       integer, allocatable:: natmpia(:), natmpia2(:) ! the number of particles in every CPU
        integer intsteps
        real*8  rx,ry,rz,vvx,vvy,vvz
        real*8  wrdt,dLx,dLy,dLz

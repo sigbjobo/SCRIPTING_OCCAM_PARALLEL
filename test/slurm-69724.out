@@ -1,0 +1,69 @@
+Starting job 69724 on c1-6 at Fri Oct 11 12:39:16 CEST 2019
+
+
+The following have been reloaded with a version change:
+  1) GCCcore/7.3.0 => GCCcore/8.2.0
+  2) binutils/2.30-GCCcore-7.3.0 => binutils/2.31.1-GCCcore-8.2.0
+  3) icc/2018.3.222-GCC-7.3.0-2.30 => icc/2019.1.144-GCC-8.2.0-2.31.1
+  4) iccifort/2018.3.222-GCC-7.3.0-2.30 => iccifort/2019.1.144-GCC-8.2.0-2.31.1
+  5) ifort/2018.3.222-GCC-7.3.0-2.30 => ifort/2019.1.144-GCC-8.2.0-2.31.1
+  6) iimpi/2018b => iimpi/2019a
+  7) imkl/2018.3.222-iimpi-2018b => imkl/2019.1.144-iimpi-2019a
+  8) impi/2018.3.222-iccifort-2018.3.222-GCC-7.3.0-2.30 => impi/2018.4.274-iccifort-2019.1.144-GCC-8.2.0-2.31.1
+  9) intel/2018b => intel/2019a
+ 10) zlib/1.2.11-GCCcore-7.3.0 => zlib/1.2.11-GCCcore-8.2.0
+
+
+The following have been reloaded with a version change:
+  1) GCCcore/8.2.0 => GCCcore/7.3.0
+  2) binutils/2.31.1-GCCcore-8.2.0 => binutils/2.30-GCCcore-7.3.0
+  3) icc/2019.1.144-GCC-8.2.0-2.31.1 => icc/2018.3.222-GCC-7.3.0-2.30
+  4) iccifort/2019.1.144-GCC-8.2.0-2.31.1 => iccifort/2018.3.222-GCC-7.3.0-2.30
+  5) ifort/2019.1.144-GCC-8.2.0-2.31.1 => ifort/2018.3.222-GCC-7.3.0-2.30
+  6) iimpi/2019a => iimpi/2018b
+  7) imkl/2019.1.144-iimpi-2019a => imkl/2018.3.222-iimpi-2018b
+  8) impi/2018.4.274-iccifort-2019.1.144-GCC-8.2.0-2.31.1 => impi/2018.3.222-iccifort-2018.3.222-GCC-7.3.0-2.30
+  9) intel/2019a => intel/2018b
+ 10) zlib/1.2.11-GCCcore-8.2.0 => zlib/1.2.11-GCCcore-7.3.0
+
+filename: /cluster/home/sigbjobo/SCRIPTING_OCCAM_PARALLEL/test/triton.5
+Number of solute molecules: 100
+Number of solvent molecules: 10000
+Size of box: 10.0 nm
+Number of atoms in a solute molecule: 12
+Running equilibration simulation
+SIMULATION-TIME: 4 SECONDS
+IOPC-TIME: 5 SECONDS
+SIMULATION-TIME: 112 SECONDS
+IOPC-TIME: 8 SECONDS
+mv: cannot move ‘SIM’ to a subdirectory of itself, ‘/cluster/home/sigbjobo/SCRIPTING_OCCAM_PARALLEL/test/SIM/SIM’
+mv: cannot move ‘slurm-69724.out’ to ‘/cluster/home/sigbjobo/SCRIPTING_OCCAM_PARALLEL/test/SIM/slurm-69724.out’: Device or resource busy
+
+Task and CPU usage stats:
+       JobID    JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+69724          JOB_NAME         20                                             00:02:43      1:0 
+69724.batch       batch         20        1   00:00:05          0   00:00:05   00:02:43      1:0 
+69724.extern     extern         20        1   00:00:00          0   00:00:00   00:02:43      0:0 
+69724.0      occamcgmpi         20       20   00:00:00          2   00:00:00   00:00:03      0:0 
+69724.1      occamcgmpi         20       20   00:00:06         10   00:01:27   00:01:50      0:0 
+
+Memory usage stats:
+       JobID     MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+69724                                                                            
+69724.batch       4600K          0      4600K      908              0        908 
+69724.extern          0          0          0        0              0          0 
+69724.0               0          2          0       68             19         51 
+69724.1          18732K         18      8793K       92             14         52 
+
+Disk usage stats:
+       JobID  MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+69724                                                                                                 
+69724.batch        29.14M               0         29.14M       12.12M                0         12.12M 
+69724.extern        0.00M               0          0.00M            0                0              0 
+69724.0             0.26M               0          0.24M        0.16M                0          0.14M 
+69724.1             0.26M               0          0.25M        0.20M                0          0.18M 
+
+Job 69724 completed at Fri Oct 11 12:41:59 CEST 2019

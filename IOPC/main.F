@@ -23,15 +23,15 @@ C-----------------------------------------------------------------------------C
 C     ! open(*)
       open(6,FILE='input.txt') 
 
-      write(*,*) '========================================'
-      write(*,*) '       * * * I. O. P. C. * * *          '
-      write(*,*) ' Input Program for Parallel Occam Code  '
-      write(*,*) ' ver. 1.7                               '
-      write(*,*) '========================================'
-      write(*,*)
-10    write(*,*) '> insert [1] for input program'
-      write(*,*) '> insert [2] for output program'
-      write(*,*) '> insert [3] for help'
+c$$$      write(*,*) '========================================'
+c$$$      write(*,*) '       * * * I. O. P. C. * * *          '
+c$$$      write(*,*) ' Input Program for Parallel Occam Code  '
+c$$$      write(*,*) ' ver. 1.7                               '
+c$$$      write(*,*) '========================================'
+c$$$      write(*,*)
+c$$$10    write(*,*) '> insert [1] for input program'
+c$$$      write(*,*) '> insert [2] for output program'
+c$$$      write(*,*) '> insert [3] for help'
       read(6,*) mode
 
       if (mode.eq.1)then
@@ -61,26 +61,26 @@ C     ! open(*)
        endif
 
 
-       write(*,*)'---------------------------------------'
-       write(*,*)'> End Input Program'
+C       write(*,*)'---------------------------------------'
+C       write(*,*)'> End Input Program'
 
       elseif(mode.eq.2)then
 
         call wtrj
 
-        write(*,*)'> End Output Program'
+C        write(*,*)'> End Output Program'
 
-      elseif(mode.eq.3)then
-        write(*,*)
-        write(*,*)'+ Help -------------------------------------------+'
-        write(*,*)'| For the input you need of fort.10 (coord.)      |' 
-        write(*,*)'| For the output you need of fort.20i and fort.1* |'
-        write(*,*)'+-------------------------------------------------+'
-        write(*,*)
-        go to 10
-      elseif(mode.gt.3)then
-        write(*,*)'Your choose is not valid, retry'
-        go to 10
+c$$$      elseif(mode.eq.3)then
+c$$$        write(*,*)
+c$$$        write(*,*)'+ Help -------------------------------------------+'
+c$$$        write(*,*)'| For the input you need of fort.10 (coord.)      |' 
+c$$$        write(*,*)'| For the output you need of fort.20i and fort.1* |'
+c$$$        write(*,*)'+-------------------------------------------------+'
+c$$$        write(*,*)
+c$$$        go to 10
+c$$$      elseif(mode.gt.3)then
+c$$$        write(*,*)'Your choose is not valid, retry'
+c$$$        go to 10
       endif
 
   

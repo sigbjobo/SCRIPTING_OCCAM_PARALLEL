@@ -1,3 +1,3 @@
 rm *.o
-ifort -c varsh.F
+ifort -Ofast -c varsh.F
 make

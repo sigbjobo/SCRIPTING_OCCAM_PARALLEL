@@ -2,43 +2,43 @@
       use varsh
       implicit none
       
-      write(*,*) '> Insert the total number of molecules: '
+C     write(*,*) '> Insert the total number of molecules: '
       read(6,*) nmol
 
-      write(*,*) '> Insert the total number of particles: '
+C     write(*,*) '> Insert the total number of particles: '
       read(6,*) natom
 
-      write(*,*) '> Insert the total number of molecule A: '
+C     write(*,*) '> Insert the total number of molecule A: '
       read(6,*) molA
 
-      write(*,*) '> Insert the number of particles in molecule A: '
+C     write(*,*) '> Insert the number of particles in molecule A: '
       read(6,*) npartA
 
-      write(*,*) '> Insert the total number of molecule B: '
+C     write(*,*) '> Insert the total number of molecule B: '
       read(6,*) molB
 
-      write(*,*) '> Insert the number of particles in molecule B: '
+C     write(*,*) '> Insert the number of particles in molecule B: '
       read(6,*) npartB
 
-      write(*,*) '> Insert the total number of molecule C: '
+C     write(*,*) '> Insert the total number of molecule C: '
       read(6,*) molC
 
-      write(*,*) '> Insert the number of particles in molecule C: '
+C     write(*,*) '> Insert the number of particles in molecule C: '
       read(6,*) npartC
 
-      write(*,*) '> Insert the total number of molecule D: '
+C     write(*,*) '> Insert the total number of molecule D: '
       read(6,*) molD
 
-      write(*,*) '> Insert the number of particles in molecule D: '
+C     write(*,*) '> Insert the number of particles in molecule D: '
       read(6,*) npartD
 
-      write(*,*) '> Velocity read [1] yes, [2] no: '
+C     write(*,*) '> Velocity read [1] yes, [2] no: '
       read(6,*) vmode
 
-      write(*,*) '> Insert the number of CPU: '
+C     write(*,*) '> Insert the number of CPU: '
       read(6,*) numprocs
 
-      write(*,*) '----------------------------------------'
+C     write(*,*) '----------------------------------------'
 
 
       allocate(nat(nmol))
